@@ -22,7 +22,9 @@ Step3、适应度函数
 
 Step4、自然选择
 自然选择思想？？？
-轮盘赌算法？https://blog.csdn.net/zengzeyu/article/details/72627836
+轮盘赌算法？
+1、https://blog.csdn.net/mr_orange_klj/article/details/78063563
+2、https://blog.csdn.net/zengzeyu/article/details/72627836
 自然选择操作使用轮盘赌算法。其具体步骤：
 假设种群中共5个个体，适应度函数计算出来的个体适应性列表是fitvalue = [1 ,3, 0, 2, 4] ，totalvalue = 10 ， 如果将fitvalue画到圆盘上，值的大小表示在圆盘上的面积。在转动轮盘的过程中，单个模块的面积越大则被选中的概率越大。选择的方法是将fitvalue转化为[1 ， 4 ，4 , 6 ，10], fitvalue / totalvalue = [0.1 , 0.4 , 0.4 , 0.6 , 1.0] . 然后产生5个0-1之间的随机数，将随机数从小到大排序，假如是[0.05 , 0.2 , 0.7 , 0.8 ,0.9]，则将0号个体、1号个体、4号个体、4号个体、4号个体拷贝到新种群中。自然选择的结果使种群更符合条件了。
 
